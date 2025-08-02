@@ -1,0 +1,23 @@
+description "Project Chrono library demo\377";
+
+uses
+	Core,
+	plugin/z,
+	ProjectChrono;
+
+options(!MSC) -mavx2;
+
+options(MSC) /arch:AVX2;
+
+file
+	ProjectChrono.cpp,
+	ProjectChrono.h,
+	demo_FEA_basic.cpp,
+	demo_CH_powertrain.cpp,
+	demo_CH_linalg.cpp,
+	demo_CH_coords.cpp,
+	SetChronoSolver.h;
+
+mainconfig
+	"" = "";
+

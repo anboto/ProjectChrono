@@ -1,0 +1,13 @@
+description "Project Chrono library\377B44,169,203";
+
+uses
+	plugin/ProjectChrono;
+
+options(!MSC) -mavx2;
+
+options(MSC) /arch:AVX2;
+
+file
+	srcdoc.tpp,
+	Copying;
+
